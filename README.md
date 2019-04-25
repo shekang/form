@@ -183,7 +183,7 @@ This input's unique name.
 
 | Option    | Description                              | Type       | Default |
 |-----------|------------------------------------------|------------|---------|
-| option.valuePropName | Prop name of component's value field, eg: checkbox should be set to `checked` ... | String | 'value' |
+| option.valuePropName | 特别注意这里:设置改变的字段名称,比如: 你用的是checkbox就设置为 `checked`,不然的话后面的方法setFieldsValue等都不生效的 | String | 'value' |
 | option.getValueProps | Get the component props according to field value. | (value): Object | (value) => ({ value }) |
 | option.getValueFromEvent | Specify how to get value from event. | (e): any | See below |
 | option.initialValue | Initial value of current component. | any | - |
